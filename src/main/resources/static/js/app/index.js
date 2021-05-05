@@ -30,7 +30,7 @@ var main = {
         })
     },
     update : function () {
-        var date = {
+        var value = {
             title : $("#title").val(),
             content : $("#content").val()
         };
@@ -42,7 +42,7 @@ var main = {
             url : '/api/v1/posts/'+ id,
             dataType : 'json',
             contentType : 'application/json; charset=utf-8',
-            data : JSON.stringify(data)
+            data : JSON.stringify(value)
         }).done(function () {
             alert('글이 수정되었습니다.');
             window.location.href = '/';
