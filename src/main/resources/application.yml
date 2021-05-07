@@ -16,3 +16,6 @@ spring:
       enabled: true
   session:
     store-type: jdbc
+org:
+  gradle:
+    daemon: false
