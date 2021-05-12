@@ -6,7 +6,6 @@ spring:
     properties:
       hiberante:
         dialect: org.hibernate.dialect.MySQL57Dialect
-
   h2:
     console:
       enabled: true
